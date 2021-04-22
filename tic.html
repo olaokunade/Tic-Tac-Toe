@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tic.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="drawer">
+        <div id="input">
+            <input id="firstP" type="text" placeholder="Enter player 1 name" maxlength="10">
+            <input id="secondP" type="text" placeholder="Enter player 2 name" maxlength="10">
+        </div>
+        <div id="control">
+            <button id="startG" onclick="startGame()">Start Game</button><button id="endG" onclick="endGame()">End
+                Game</button>
+        </div>
+        <div id="score">
+            <div
+                style="text-align: center; margin-bottom: 10px; background-color: rgb(165, 42, 93); padding: 2px 50px;color: cornsilk;">
+                Score Card</div>
+            <label id="player1">Player 1</label>
+            <span id="scone">0</span><br>
+
+            <label id="player2">Player 2</label>
+            <span id="sctwo">0</span>
+        </div>
+        <div class="gameName">- Tic Tac Toe -</div> <br>
+        <button id="restart" onclick="restartGame()">restart</button>
+    </div>
+
+
+    <div id="result"></div>
+
+    <div class="container" id="container">
+        <button class="divbox" id="one" onclick="myFunc(event)"></button>
+        <button class="divbox" id="two" onclick="myFunc(event)"></button>
+        <button class="divbox" id="three" onclick="myFunc(event)"></button>
+        <button class="divbox" id="four" onclick="myFunc(event)"></button>
+        <button class="divbox" id="five" onclick="myFunc(event)"></button>
+        <button class="divbox" id="six" onclick="myFunc(event)"></button>
+        <button class="divbox" id="seven" onclick="myFunc(event)"></button>
+        <button class="divbox" id="eight" onclick="myFunc(event)"></button>
+        <button class="divbox" id="nine" onclick="myFunc(event)"></button>
+    </div>
+    <script src="tic.js"></script>
+</body>
+
+</html>
